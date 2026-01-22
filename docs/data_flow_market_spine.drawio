@@ -1,0 +1,56 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="A-6tmIDUxaGdBNyj6Wpe">
+    <mxGraphModel dx="1296" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=20;fontStyle=1" value="Logic Structure" vertex="1">
+          <mxGeometry height="30" width="160" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-5" edge="1" parent="1" source="IBR7OoY7OZ2DtWzDXZ-O-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IBR7OoY7OZ2DtWzDXZ-O-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Raw Market Data" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-7" edge="1" parent="1" source="IBR7OoY7OZ2DtWzDXZ-O-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IBR7OoY7OZ2DtWzDXZ-O-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-9" connectable="0" parent="IBR7OoY7OZ2DtWzDXZ-O-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;" value="RangeClosed" vertex="1">
+          <mxGeometry relative="1" x="-0.1129" y="-1" as="geometry">
+            <mxPoint x="46" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Range Extractor&lt;div&gt;(Prev Day/Week)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-11" edge="1" parent="1" source="IBR7OoY7OZ2DtWzDXZ-O-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IBR7OoY7OZ2DtWzDXZ-O-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-6" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Market Range&lt;div&gt;(High Low Midpoint)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-13" edge="1" parent="1" source="IBR7OoY7OZ2DtWzDXZ-O-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IBR7OoY7OZ2DtWzDXZ-O-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-10" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Spine Calculator&lt;div&gt;(Distance)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-15" edge="1" parent="1" source="IBR7OoY7OZ2DtWzDXZ-O-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IBR7OoY7OZ2DtWzDXZ-O-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-16" connectable="0" parent="IBR7OoY7OZ2DtWzDXZ-O-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#33FF33;" value="StateChanged" vertex="1">
+          <mxGeometry relative="1" x="-0.0842" as="geometry">
+            <mxPoint x="44" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-12" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Spine State Classifier" vertex="1">
+          <mxGeometry height="60" width="135" x="358" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="IBR7OoY7OZ2DtWzDXZ-O-14" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="State Log / Replay" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="620" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
